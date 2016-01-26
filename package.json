@@ -1,0 +1,37 @@
+{
+  "name": "ATCM",
+  "version": "0.0.0",
+  "description": "Twitter auto community manager",
+  "main": "app.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "author": "Xavier de Frutos",
+  "license": "",
+  "dependencies": {
+    "express": "*",
+    "express-handlebars": "*",
+    "underscore": "*",
+    "mongoose": "*",
+    "node-jsx": "*",
+    "twit": "*",
+    "jade": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "nodemon": "*",
+    "reactify": "*",
+    "uglify-js": "*",
+    "watchify": "*"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
+
