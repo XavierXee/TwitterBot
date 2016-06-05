@@ -24,14 +24,14 @@ app.listen(3000, function () {
 
 	var verbose = false;
 
-	var twitConfigXavierDeFrutos = {
-		consumer_key:        'hHVryVa7qUIhfNIhkdJQ26kcY',
-		consumer_secret:     'xCzg5oi7vXeiPI6Q8VtrFTMkx5V0FCla3QFXYRKcbzc1UW37vu',
-		access_token:        '4027243637-paHzv6Q27aV5OUSa8qWpCYqKej3pptxXFdvS63A',
-		access_token_secret: 'e8qGSjgGiU9pXVhykBo16dBFd378jtrmdK3mv6A2nQuhD'	
+	var twitConfig = {
+		consumer_key:        '*****************',
+		consumer_secret:     '*************************************************',
+		access_token:        '*************************************************',
+		access_token_secret: '*************************************************'	
 	};
 
-	var Twit = new twitter(twitConfigXavierDeFrutos);
+	var Twit = new twitter(twitConfig);
 
 	var trackFields = "#git #stackoverflow #2dart #animation #autodesk #mobilegame #voxel #blender #lowpoly #3dart #blender #b3d #magicavoxel node.js #nodejs nodejs #visualstudio #typescript #threejs #socket.io #gamemaker #Coding #gamedev #indiedev #indiegame #hameart #conceptart #indiegamedev #css #html5 #programming #javascript #js #angular #angularJS #react #C# C# #untiy3D #pixelart #retrogaming #drawing #websites"
 	var trackers = trackFields.split(" ");
